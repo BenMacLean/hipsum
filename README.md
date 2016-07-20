@@ -1,80 +1,19 @@
-# hipsum
 
-Use this package if you want to add dummy hipster Ipsum text to your page.
+###Hipsum
+
+Use this package if you want to add dummy Hipster Ipsum text to your page.
+
+Hipsum is a for-fun plugin for GitHub's Atom, created by Ben MacLean, based from Lipsum by Nickolas Kenyeres.
 
 You can add a sentence, paragraph, or series of paragraphs to the page.  For
 HTML pages you can wrap the paragraphs in HTML `<p>` tags.
 
-For anyone familiar with the existing
-[hipster Ipsum package](https://github.com/nickclaw/atom-hipster-ipsum) you will
-notice a lot of similarities.  Unfortunately that one doesn't work with
-Atom >= 1.0, and that's why this now exists.  I had already completed a lot of
-the work before I realised that existed which is why it's not a straight fork
-of that package.
+The original software is licensed under the MIT license. (Lipsum)
 
-## Install
+Lipsum is Copyright (c) 2012-2015 Nickolas Kenyeres
 
-You can install it from the package manager.  Just search for "hipsum".
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Or you can install it using APM.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-```
-apm install hipsum
-```
-
-## How to use
-
-To use this, load the command panel, type "hipsum" and choose the relevant
-option.  Alternatively you can right click and choose "hipsum", or choose
-"hipsum" from the Packages menu.
-
-## Config options
-
-There are a number of configuration options:
-
-### Sentences/Paragraphs
-
-#### Number of paragraphs
-The number of paragraphs to generate when running the 'paragraphs' command".
-
-The default value is 4.
-
-#### Maximum words per sentence
-When generating content, any sentence created will have no more than this
-number of words.  
-
-The default is 18.
-
-#### Minimum words per sentence
-When generating content, any sentence created will have at least this number of
-words.  
-
-The default is 8.
-
-#### Maximum sentences per paragraph
-When generating content, any paragraph created will have no more than this
-number of sentences.  
-
-The default is 8.
-
-#### Minimum sentences per paragraph
-When generating content, any paragraph created will have at least than this
-number of sentences.  
-
-The default is 3.
-
-### HTML Extensions
-You can also specify a list of file extensions where any paragraphs generated
-will be wrapped in HTML `<p> </p>` tags.  This option is a list of file
-extensions for HTML file types.
-
-The default values are:
-- .html
-- .htm (does anyone still use this?)
-- .php (I'm not sure whether this should be included here or not, but you can
-override it if you want to)
-- .twig (Twig templates)
-- .tpl (Smarty templates)
-
-When adding others, these should be added in lowercase, and remember to include
-the opening '.'
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
