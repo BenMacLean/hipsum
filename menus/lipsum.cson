@@ -1,0 +1,43 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Lipsum'
+      'submenu': [
+        {
+          'label': 'Paragraph'
+          'command': 'lipsum:paragraph'
+        },
+        {
+            'label': 'Paragraphs'
+            'command': 'lipsum:paragraphs'
+        },
+        {
+          'label': 'Sentence'
+          'command': 'lipsum:sentence'
+        }
+      ]
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Lipsum'
+      'submenu': [
+        {
+          'label': 'Paragraph'
+          'command': 'lipsum:paragraph'
+        },
+        {
+            'label': 'Paragraphs'
+            'command': 'lipsum:paragraphs'
+        },
+        {
+          'label': 'Sentence'
+          'command': 'lipsum:sentence'
+        }
+      ]
+    ]
+  }
+]
