@@ -30,7 +30,7 @@
   "dependencies": {
     "hipster-ipsum": "~1.0"
   },
-  "readme": "# Hipsum\n\nUse this package if you want to add dummy hipster Ipsum text to your page.
+  "readme": "# Hipsum\n\nUse this package if you want to add dummy hipster Ipsum text to your page.",
   "bugs": {
     "url": "https://github.com/BenMacLean/hipsum/issues"
   },
