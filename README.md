@@ -1,6 +1,8 @@
 
 ###Hipsum
 
+CURRENTLY UNDER CONSTRUCTION
+
 Use this package if you want to add dummy Hipster Ipsum text to your page.
 
 Hipsum is a for-fun plugin for GitHub's Atom, created by Ben MacLean, based from Lipsum by Nickolas Kenyeres.
@@ -10,7 +12,7 @@ HTML pages you can wrap the paragraphs in HTML `<p>` tags.
 
 The original software is licensed under the MIT license. (Lipsum)
 
-Lipsum is Copyright (c) 2012-2015 Nickolas Kenyeres
+Lipsum originally by Nickolas Kenyeres
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
