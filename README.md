@@ -1,12 +1,12 @@
-# Lipsum
+# hipsum
 
-Use this package if you want to add dummy Lorem Ipsum text to your page.
+Use this package if you want to add dummy hipster Ipsum text to your page.
 
 You can add a sentence, paragraph, or series of paragraphs to the page.  For
 HTML pages you can wrap the paragraphs in HTML `<p>` tags.
 
 For anyone familiar with the existing
-[Lorem Ipsum package](https://github.com/nickclaw/atom-lorem-ipsum) you will
+[hipster Ipsum package](https://github.com/nickclaw/atom-hipster-ipsum) you will
 notice a lot of similarities.  Unfortunately that one doesn't work with
 Atom >= 1.0, and that's why this now exists.  I had already completed a lot of
 the work before I realised that existed which is why it's not a straight fork
@@ -14,19 +14,19 @@ of that package.
 
 ## Install
 
-You can install it from the package manager.  Just search for "lipsum".
+You can install it from the package manager.  Just search for "hipsum".
 
 Or you can install it using APM.
 
 ```
-apm install lipsum
+apm install hipsum
 ```
 
 ## How to use
 
-To use this, load the command panel, type "Lipsum" and choose the relevant
-option.  Alternatively you can right click and choose "Lipsum", or choose
-"Lipsum" from the Packages menu.
+To use this, load the command panel, type "hipsum" and choose the relevant
+option.  Alternatively you can right click and choose "hipsum", or choose
+"hipsum" from the Packages menu.
 
 ## Config options
 

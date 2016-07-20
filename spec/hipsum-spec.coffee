@@ -1,24 +1,24 @@
-Lipsum = require '../lib/lipsum'
+hipsum = require '../lib/hipsum'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "Lipsum", ->
+describe "hipsum", ->
     [workspaceElement, activationPromise] = []
 
     beforeEach ->
         workspaceElement = atom.views.getView(atom.workspace)
-        activationPromise = atom.packages.activatePackage('lipsum')
+        activationPromise = atom.packages.activatePackage('hipsum')
 
         waitsForPromise ->
             atom.workspace.open('blankfile.txt').then (editor) ->
                 expect(editor.getText()).toEqual ""
 
-    describe "when the lipsum:sentence event is triggered", ->
+    describe "when the hipsum:sentence event is triggered", ->
         it "adds a single sentence", ->
-            atom.commands.dispatch workspaceElement, 'lipsum:paragraph'
+            atom.commands.dispatch workspaceElement, 'hipsum:paragraph'
 
             waitsForPromise ->
                 activationPromise
@@ -29,10 +29,10 @@ describe "Lipsum", ->
                 expect(text).not.toEqual ""
                 expect(text.split(' ').length).toBeGreaterThan 1
 
-    describe "when the lipsum:paragraph event is triggered", ->
+    describe "when the hipsum:paragraph event is triggered", ->
         it "adds a single paragraph", ->
 
-            atom.commands.dispatch workspaceElement, 'lipsum:paragraph'
+            atom.commands.dispatch workspaceElement, 'hipsum:paragraph'
 
             waitsForPromise ->
                 activationPromise
@@ -44,10 +44,10 @@ describe "Lipsum", ->
                 expect(text.indexOf("\n")).toEqual -1
                 expect(text.split('.').length).toBeGreaterThan 1
 
-    describe "when the lipsum:paragraphs event is triggered", ->
+    describe "when the hipsum:paragraphs event is triggered", ->
         it "adds multiple paragraph", ->
 
-            atom.commands.dispatch workspaceElement, 'lipsum:paragraphs'
+            atom.commands.dispatch workspaceElement, 'hipsum:paragraphs'
 
             waitsForPromise ->
                 activationPromise

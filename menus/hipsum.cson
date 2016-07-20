@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Lipsum'
+      'label': 'hipsum'
       'submenu': [
         {
           'label': 'Paragraph'
-          'command': 'lipsum:paragraph'
+          'command': 'hipsum:paragraph'
         },
         {
             'label': 'Paragraphs'
-            'command': 'lipsum:paragraphs'
+            'command': 'hipsum:paragraphs'
         },
         {
           'label': 'Sentence'
-          'command': 'lipsum:sentence'
+          'command': 'hipsum:sentence'
         }
       ]
     }
@@ -23,19 +23,19 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Lipsum'
+      'label': 'hipsum'
       'submenu': [
         {
           'label': 'Paragraph'
-          'command': 'lipsum:paragraph'
+          'command': 'hipsum:paragraph'
         },
         {
             'label': 'Paragraphs'
-            'command': 'lipsum:paragraphs'
+            'command': 'hipsum:paragraphs'
         },
         {
           'label': 'Sentence'
-          'command': 'lipsum:sentence'
+          'command': 'hipsum:sentence'
         }
       ]
     ]

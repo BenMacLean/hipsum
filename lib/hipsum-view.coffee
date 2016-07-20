@@ -1,13 +1,13 @@
 module.exports =
-class LipsumView
+class hipsumView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('lipsum')
+    @element.classList.add('hipsum')
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "Add some Lipsum crap to the page."
+    message.textContent = "Add some hipsum crap to the page."
     message.classList.add('message')
     @element.appendChild(message)
 

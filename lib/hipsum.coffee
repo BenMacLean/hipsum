@@ -1,5 +1,5 @@
-LipsumView = require './lipsum-view'
-loremIpsum = require 'lorem-ipsum'
+hipsumView = require './hipsum-view'
+hipsterIpsum = require 'hipster-ipsum'
 path = require 'path'
 {CompositeDisposable} = require 'atom'
 
@@ -30,33 +30,33 @@ module.exports =
         htmlExtensions:
             type: 'array'
             title: 'HTML Extensions'
-            description: "List any extensions that should be wrapped in HTML code when generating Lipsum."
+            description: "List any extensions that should be wrapped in HTML code when generating hipsum."
             default: [".html", ".htm", ".php", ".twig", ".tpl"]
             items:
                 type: 'string'
 
     outputText: (items) ->
-        extensions = atom.config.get 'lipsum.htmlExtensions'
+        extensions = atom.config.get 'hipsum.htmlExtensions'
 
-        items.sentenceLowerBound = atom.config.get 'lipsum.minPerSentence'
-        items.sentenceUpperBound = atom.config.get 'lipsum.maxPerSentence'
-        items.paragraphLowerBound = atom.config.get 'lipsum.minPerParagraph'
-        items.paragraphUpperBound = atom.config.get 'lipsum.maxPerParagraph'
+        items.sentenceLowerBound = atom.config.get 'hipsum.minPerSentence'
+        items.sentenceUpperBound = atom.config.get 'hipsum.maxPerSentence'
+        items.paragraphLowerBound = atom.config.get 'hipsum.minPerParagraph'
+        items.paragraphUpperBound = atom.config.get 'hipsum.maxPerParagraph'
 
         if editor = atom.workspace.getActiveTextEditor()
             ext = path.extname(editor.getPath()).toLowerCase()
             if ext and ext in extensions
                 items.format = 'html'
-            output = loremIpsum(items)
+            output = hipsterIpsum(items)
             editor.insertText(output)
         else
             alert('You can only insert text into an active text editor.')
 
     activate: ->
         atom.commands.add 'atom-workspace',
-            'lipsum:paragraph': => @paragraph()
-            'lipsum:paragraphs': => @paragraphs()
-            'lipsum:sentence': => @sentence()
+            'hipsum:paragraph': => @paragraph()
+            'hipsum:paragraphs': => @paragraphs()
+            'hipsum:sentence': => @sentence()
 
     deactivate: ->
         @subscriptions.dispose()
