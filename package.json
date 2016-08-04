@@ -1,7 +1,7 @@
 {
   "name": "Hipsum",
   "main": "./lib/hipsum",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Generate hipster ipsum for fun placeholder text in your Atom editor.",
   "keywords": [
     "hipster",
