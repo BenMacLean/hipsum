@@ -1,9 +1,7 @@
 
 ###Hipsum
 
-CURRENTLY UNDER CONSTRUCTION
-
-Use this package if you want to add dummy Hipster Ipsum text to your page.
+Use this package if you want to add dummy Hipster Ipsum text to your page by RIGHT CLICKING where you wish to add text, select between paragraph, paragraphs, or sentence lengths to generate.
 
 Hipsum is a for-fun plugin for GitHub's Atom, created by Ben MacLean, based from Lipsum by Nickolas Kenyeres.
 
