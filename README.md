@@ -1,6 +1,7 @@
 
 ###Hipsum
 
+Click the link below to donate, fork, or check out on atom.io:
 http://www.ivorypanda.com/hipsum/
 
 Use this package if you want to add dummy Hipster Ipsum text to your page by RIGHT CLICKING where you wish to add text, select between paragraph, paragraphs, or sentence lengths to generate.
